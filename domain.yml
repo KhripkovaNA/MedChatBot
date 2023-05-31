@@ -1,0 +1,41 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- chitchat
+- deny
+- describe_symptoms
+- feel_sick
+- goodbye
+- greet
+- how_to_get_started
+- inquire_about_disease
+entities:
+- symptoms
+- disease
+actions:
+- utter_greet
+- action_provide_disease_info
+- utter_iamabot
+responses:
+  utter_greet:
+  - text: Hello! How can I assist you today?
+  utter_goodbye:
+  - text: Goodbye! Take care.
+  utter_affirm:
+  - text: Great! Let me know how I can help you further.
+  utter_deny:
+  - text: No problem. If you have any other questions, feel free to ask.
+  utter_feel_sick:
+  - text: I'm sorry to hear that you're not feeling well. Please provide more details about your symptoms so that I can assist you better.
+  utter_describe_symptoms:
+  - text: I understand. Could you please provide more details about the symptoms you are experiencing?
+  utter_how_to_get_started:
+  - text: To get started, you can simply ask me any health-related questions or describe any symptoms you are experiencing.
+  utter_iamabot:
+  - text: I am an AI-powered chatbot designed to assist you with health-related queries. How can I help you today?
+  utter_medical_focus:
+  - text: I'm sorry, but I can only discuss medical issues. If you have any health concerns or medical questions, I'm here to help!
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

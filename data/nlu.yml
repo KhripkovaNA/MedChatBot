@@ -1,0 +1,112 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: feel_sick
+  examples: |
+    - I'm not feeling well.
+    - I feel sick.
+    - I have been feeling unwell lately.
+    - Something doesn't feel right with my body.
+    - I think I might be coming down with something.
+    - My health hasn't been great recently.
+    - I'm experiencing some discomfort in my body.
+    - I'm feeling under the weather.
+- intent: describe_symptoms
+  examples: |
+    - I have [headache](symptoms) and [nausea](symptoms).
+    - I feel [tired](symptoms) and [fatigued](symptoms) all the time.
+    - My body is experiencing [discomfort](symptoms) and [aches](symptoms).
+    - I have a [fever](symptoms) and [chills](symptoms).
+    - I'm having [difficulty breathing](symptoms) and [chest pain](symptoms).
+    - I'm coughing [continuously](symptoms) and have [sore throat](symptoms).
+    - I have swelling in my [legs](symptoms) and [feet](symptoms).
+    - I'm experiencing swelling in my [abdomen](symptoms).
+    - I have been having frequent [sweats](symptoms).
+    - I'm dealing with persistent [nausea](symptoms) and [vomiting](symptoms).
+    - I feel [weakness](symptoms) in my body.
+    - I have a [stiff neck](symptoms).
+    - I'm having [joint](symptoms) and [muscle pain](symptoms).
+    - I experience [pain during sex](symptoms).
+    - I noticed [eye lesions](symptoms).
+    - I feel extreme [fatigue](symptoms) all the time.
+- intent: inquire_about_disease
+  examples: |
+    - Can you provide information about [diabetes](disease)?
+    - What do you know about [ovarian cancer](disease)?
+    - Tell me about [heart attack](disease).
+    - I'm curious about [leukemia](disease). Can you give me some information?
+    - I want to learn more about [rectal cancer](disease).
+    - Can you explain [hypertension](disease) to me?
+    - Tell me about [arthritis](disease) and its treatment options.
+    - I'm interested in knowing about [depression](disease). Could you provide some insights?
+    - What about [influenza](disease)?
+- intent: how_to_get_started
+  examples: |
+    - How can I get started with this chatbot?
+    - What are the first steps to start using this chatbot?
+    - How do I begin using this application?
+    - Can you guide me on how to get started?
+    - I'm new here, what should I do to begin?
+    - What is the process to start using this chatbot?
+    - Where should I begin with this application?
+    - Can you provide instructions on how to get started?
+    - What are the initial steps to use this chatbot?
+    - I want to get started, what should I do first?
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Who am I talking to?
+- intent: chitchat
+  examples: |
+    - Can you tell me a joke?
+    - What's the weather like today?
+    - How old are you?
+    - Do you like sports?
+    - What's your favorite movie?

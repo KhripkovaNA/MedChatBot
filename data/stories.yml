@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+
+- story: Greet and ask for assistance
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: how_to_get_started
+  - action: utter_how_to_get_started
+
+- story: Confirm feeling sick and ask for symptoms
+  steps:
+  - intent: feel_sick
+  - action: utter_feel_sick
+#  - intent: describe_symptoms
+#  - action: action_provide_disease_info
+
+- story: interactive_story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: inquire_about_disease
+  - action: action_provide_disease_info
