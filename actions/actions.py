@@ -41,8 +41,8 @@ class ActionProvideDiseaseInfo(Action):
             response = disease_info["description"].values[0]
 
             # Send the response to the user
-            dispatcher.utter_message(text=f"Here is some information about {inquired_disease}:")
-            dispatcher.utter_message(text=response)
+
+            dispatcher.utter_message(text=f"Here is some information about {inquired_disease}:\n{response}")
 
         else:
             dispatcher.utter_message(text="I'm sorry, I couldn't find information about that disease.")
