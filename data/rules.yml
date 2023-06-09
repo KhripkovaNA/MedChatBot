@@ -2,6 +2,12 @@ version: "3.1"
 
 rules:
 
+- rule: Respond to a greeting at the beginning of a conversation
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -17,7 +23,19 @@ rules:
   - intent: chitchat
   - action: utter_medical_focus
 
-- rule: Inquire about disease
+- rule: Getting started
   steps:
-  - intent: inquire_about_disease
-  - action: action_provide_disease_info
+  - intent: how_to_get_started
+  - action: utter_how_to_get_started
+
+- rule: Respond polite
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Feeling sick and describe symptoms
+  steps:
+  - or:
+    - intent: feel_sick
+    - intent: describe_symptoms
+  - action: utter_feel_sick
